@@ -1,16 +1,43 @@
 <h1>Connect 4</h1>
 <p>Board Awal : </p>
 <div style="inline-block">
-<div *ngFor="let b of baris1,let b2 of baris2,let b3 of baris3,let b4 of baris4,let b5 of baris5">
-  {{b.isi}}
-  {{b2.isi}}
-  {{b3.isi}}
-  {{b4.isi}}
-  {{b5.isi}}
+<div>
+  {{baris1[0].isi}}
+  {{baris1[1].isi}}
+  {{baris1[2].isi}}
+  {{baris1[3].isi}}
+  {{baris1[4].isi}}
+</div>
+<div>
+  {{baris2[0].isi}}
+  {{baris2[1].isi}}
+  {{baris2[2].isi}}
+  {{baris2[3].isi}}
+  {{baris2[4].isi}}
+</div>
+<div>
+  {{baris3[0].isi}}
+  {{baris3[1].isi}}
+  {{baris3[2].isi}}
+  {{baris3[3].isi}}
+  {{baris3[4].isi}}
+</div>
+<div>
+  {{baris4[0].isi}}
+  {{baris4[1].isi}}
+  {{baris4[2].isi}}
+  {{baris4[3].isi}}
+  {{baris4[4].isi}}
+</div>
+<div>
+  {{baris5[0].isi}}
+  {{baris5[1].isi}}
+  {{baris5[2].isi}}
+  {{baris5[3].isi}}
+  {{baris5[4].isi}}
 </div>
 </div>
 <br>
-<p>Player{{turn}}'s Turn</p>
+<p>Input Koordinat</p>
 <input type="text" placeholder="Koordinat1"[(ngModel)]="koord1"><input type="text" [(ngModel)]="koord2" placeholder="Koordinat2"><br><br>
 <button (click)="Masuk()">Input Koordinat</button>
-{{coba}}
