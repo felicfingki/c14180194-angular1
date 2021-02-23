@@ -1,4 +1,16 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h1>Connect 4</h1>
+<p>Board Awal : </p>
+<div style="inline-block">
+<div *ngFor="let b of baris1,let b2 of baris2,let b3 of baris3,let b4 of baris4,let b5 of baris5">
+  {{b.isi}}
+  {{b2.isi}}
+  {{b3.isi}}
+  {{b4.isi}}
+  {{b5.isi}}
+</div>
+</div>
+<br>
+<p>Player{{turn}}'s Turn</p>
+<input type="text" placeholder="Koordinat1"[(ngModel)]="koord1"><input type="text" [(ngModel)]="koord2" placeholder="Koordinat2"><br><br>
+<button (click)="Masuk()">Input Koordinat</button>
+{{coba}}
